@@ -1,0 +1,22 @@
+{% include '_header.html.twig' %}
+
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bonjour</title>
+</head>
+
+        <body>
+        <ul>
+        {% for person in persons %}
+
+        {% if person.age > 18 %}
+     <span> {{ person.name }}</span>
+{% endif %}
+{% endfor %}
+</ul>
+</body>
+</html>
+
